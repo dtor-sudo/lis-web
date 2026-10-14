@@ -1,0 +1,143 @@
+<!-- =========================================================
+STEP 1: Add the required HTML5 skeleton
+========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <!-- =========================================================
+    STEP 2: Build the “top area” (site name + navigation) using simple HTML
+    ========================================================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <h2 class="brand">Within Reason<span class="dot">.</span></h2>
+        <nav class="site-nav" aria-label="Main">
+          <a href="#learning">Learning</a>
+          <a href="#projects">Projects</a>
+          <a href="#personal">Personal</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =========================================================
+    STEP 3: Hero section + “Get Started button” as a link
+    ========================================================= -->
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Welcome!</h1>
+          <p class="hero-subhead">I'm Daniel, and this is where I keep track of what I have going on.</p>
+          <p>
+            From what I'm learning and the projects I'm building to my thoughts on readings, it's all contained here!
+          </p>
+          <a class="btn btn-dark" href="#learning">Get started</a>
+          <a class="btn btn-outline" href="#projects">Featured</a>
+        </div>
+      </section>
+
+    <!-- =========================================================
+    STEP 4: Features section (3 blocks) + featured content section
+    ========================================================= -->
+      <section id="learning" class="features" aria-labelledby="features-heading">
+        <div class="container">
+          <h2 id="features-heading" class="section-title">Academic Progress</h2>
+          <img src="images/bookandcoffee.jpg" alt="Open book with dry leaf next to a cup of coffee.">
+          <p class="section-lede">A place where I document what I'm learning and the projects I'm working on.</p>
+
+          <div class="features-grid">
+            <article class="feature">
+              <h3>Notes</h3>
+              <p>Short notes and explanations about HTML, CSS, and other things I'm learning.</p>
+            </article>
+            <article class="feature">
+              <h3>Past Projects</h3>
+              <p>A collection of the websites and programs I've built.</p>
+            </article>
+            <article class="feature">
+              <h3>Future Projects</h3>
+              <p>My plans for future academic projects.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="featured" aria-labelledby="featured-heading">
+        <div class="container">
+          <h2 id="featured-heading" class="section-title">Featured Content</h2>
+          <h3>Current Projects</h3>
+          <p>Here's what I've been working on recently. This is just a placeholder paragraph. Let's just pretend that there's a bunch of text here
+            listing all of the cool things I'm totally working on...</p>
+        </div>
+      </section>
+
+    <!-- =========================================================
+    STEP 5: Two secondary content blocks + CTA section
+    ========================================================= -->
+      <section id="personal" class="secondary" aria-labelledby="personal-heading">
+        <div class="container">
+          <h2 id="personal-heading" class="section-title">Personal Progress Corner</h2>
+          <img src="images/yarn.jpg" alt="Picture of colorful yarn set side-by-side." width="500" height="340">
+
+          <div class="secondary-grid">
+            <div class="card">
+              <div class="card-text">
+                <h3>Hobby Tracking</h3>
+                <div class="card-image img-a"></div>
+                <p>Progress on my favorite projects, the projects I'd like to start, and other hobbies I'd like to learn more about.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-text">
+                <h3>Completed Readings and Thoughts</h3>
+                <p>Where I track what I've read and my thoughts about those works.</p>
+              </div>
+              <div class="card-image img-b"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="cta" aria-labelledby="cta-heading">
+        <div class="container cta-inner">
+          <h2 id="cta-heading">Want to know more?</h2>
+          <p>Send me a message!</p>
+          <a class="btn btn-dark" href="#">Contact me</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+    STEP 6: Footer
+    ========================================================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <p>&copy; 2026 LIS</p>
+        </div>
+
+        <nav class="footer-cols" aria-label="Footer">
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="#learning">Learning notes and past projects</a>
+            <a href="#projects">Featured projects</a>
+            <a href="#personal">Hobby tracking and completed readings</a>
+          </div>
+          <div class="footer-col">
+            <h4>More</h4>
+            <a href="#contact">Contact</a>
+            <a href="#top">Back to top</a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
